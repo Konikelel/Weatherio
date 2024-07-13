@@ -2,6 +2,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background-color: #1b1b1d;
+
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.25rem;
 }
 
 .weather-info {
@@ -9,16 +19,41 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    h2 {
+        font-size: 5rem;
+        font-weight: 400;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 0.05rem;
+    background-color: rgb(61, 61, 61);
+}
+
+.location-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+
+    color: grey;
 }
 
 .date {
     display: flex;
     justify-content: start;
     align-items: center;
+
+    gap: 1rem;
 }
 
 .location {
     display: flex;
     justify-content: start;
     align-items: center;
+
+    gap: 1rem;
 }
