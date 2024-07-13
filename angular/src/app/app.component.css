@@ -1,9 +1,5 @@
 :host {
-  background-color: blue;
+    background-color: blue;
 
-  width: 95%;
-  height: 95%;
-
-  max-width: 1200px;
-  max-height: 1200px;
+    max-width: 1200px;
 }

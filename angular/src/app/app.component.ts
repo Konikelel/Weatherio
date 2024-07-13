@@ -5,17 +5,17 @@ import { TodaysHighlightsComponent } from './todays-highlights/todays-highlights
 import { WeatherNowComponent } from './weather-now/weather-now.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  imports: [
-    FiveDaysForecastComponent,
-    OneDayForecastComponent,
-    TodaysHighlightsComponent,
-    WeatherNowComponent,
-  ],
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [
+        FiveDaysForecastComponent,
+        OneDayForecastComponent,
+        TodaysHighlightsComponent,
+        WeatherNowComponent,
+    ],
 })
 export class AppComponent {
-  title = 'weatherio';
+    title = 'weatherio';
 }
