@@ -11,14 +11,15 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    gap: 0.6rem;
+    gap: 1rem;
 
     span {
         font-size: 40px;
+        color: #2e9cca;
     }
 
     h1 {
-        letter-spacing: 0.06rem;
+        letter-spacing: 0.2rem;
         font-weight: 400;
     }
 }
@@ -37,15 +38,40 @@ nav {
 
     input {
         all: unset;
-        width: 25rem;
+        width: 30rem;
         text-align: left;
     }
 }
 
+.search:hover,
+.search:focus {
+    input::placeholder {
+        color: whitesmoke;
+
+        transition: all 0.2s ease-out;
+    }
+}
+
 .location {
+    all: unset;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background-color: green;
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    border-radius: 4rem;
+    background-color: #2e9cca90;
+    color: whitesmoke;
+
+    gap: 0.5rem;
+}
+
+.location:hover,
+.location:active {
+    background-color: #2e9cca;
+    color: white;
+
+    transition: all 0.2s ease-out;
 }
