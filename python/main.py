@@ -41,9 +41,9 @@ async def forecast_weather(
     return weather
 
 
-@app.get("/weather/pollution")
+@app.get("/pollution")
 async def pollution_weather(
-    city: Annotated[str, Query(description="Name of the city to get weather data", min_length=1, max_length=30)]
+    city: Annotated[str, Query(description="Name of the city to get pollution data", min_length=1, max_length=30)]
 ):
     weather = await fetchAirPollution(city=city)
 
