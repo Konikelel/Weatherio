@@ -2,12 +2,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 1rem 0;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 0.6rem;
+
+    span {
+        font-size: 40px;
+    }
+
+    h1 {
+        letter-spacing: 0.06rem;
+        font-weight: 400;
+    }
 }
 
 .search {
@@ -15,7 +28,18 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    background-color: brown;
+    cursor: text;
+    padding: 0.75rem 1rem;
+    border-radius: 4rem;
+    background-color: #1b1b1d;
+
+    gap: 0.75rem;
+
+    input {
+        all: unset;
+        width: 25rem;
+        text-align: left;
+    }
 }
 
 .location {
