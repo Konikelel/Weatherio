@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background-color: #1b1b1d;
+
+    gap: 1rem;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
