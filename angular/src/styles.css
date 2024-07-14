@@ -22,3 +22,11 @@ body {
 .material-icons-outlined {
     color: whitesmoke;
 }
+
+.main-text {
+    font-size: 1.25rem;
+}
+
+.description {
+    font-size: 1rem;
+}
