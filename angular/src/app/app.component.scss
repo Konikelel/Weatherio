@@ -1,6 +1,5 @@
 :host {
-    width: 95%;
-    max-width: 1400px;
+    width: min(95%, 1400px);
 
     background-color: #131215;
 }
