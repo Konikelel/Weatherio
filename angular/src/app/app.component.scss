@@ -1,5 +1,21 @@
 :host {
-    width: min(95%, 1400px);
+    width: min(95%, 2000px);
 
     background-color: #131215;
+}
+
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 3rem;
+
+    .first {
+        flex-grow: 0;
+    }
+
+    .second {
+        flex-grow: 1;
+    }
 }
