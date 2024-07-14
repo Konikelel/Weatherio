@@ -1,16 +1,16 @@
 <h3 class="main-text">Todays Highlights</h3>
 <div class="overview">
-    <div class="air-quality">
+    <div class="air-quality box">
         <div class="description">
-            <h4>Air Quality</h4>
+            <h4>Air Quality Index</h4>
             <span>Good</span>
         </div>
         <div class="data">
             <span class="material-icons-outlined" alt="air">air</span>
             @for (item of [1, 2, 3, 4]; track item) {
             <div class="data-item">
-                <span>PM2.5</span>
-                <span>10</span>
+                <span class="description">PM2.5</span>
+                <span class="value">10</span>
             </div>
             }
         </div>

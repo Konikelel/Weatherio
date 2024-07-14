@@ -7,5 +7,69 @@
     border-radius: 1.5rem;
     background-color: #1b1b1d;
 
+    gap: 1.5rem;
+}
+
+.overview {
+    display: grid;
+
+    gap: 1rem 1.5rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #1a191c;
+
     gap: 1rem;
+}
+
+.air-quality {
+    .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        h4 {
+            font-weight: 400;
+            color: grey;
+        }
+    }
+
+    .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        gap: 0.5rem;
+
+        & > span {
+            font-size: 4rem;
+        }
+
+        .data-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 1rem;
+
+            .description {
+                color: grey;
+            }
+
+            .value {
+                font-size: 3rem;
+            }
+        }
+    }
 }
