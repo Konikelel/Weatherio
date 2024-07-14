@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { DaysForecastComponent } from './days-forecast/days-forecast.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TodaysHighlightsComponent } from './todays-highlights/todays-highlights.component';
@@ -9,8 +10,9 @@ import { TodaysHighlightsComponent } from './todays-highlights/todays-highlights
     styleUrl: './app.component.scss',
     imports: [
         NavbarComponent,
-        TodaysHighlightsComponent,
+        CurrentWeatherComponent,
         DaysForecastComponent,
+        TodaysHighlightsComponent,
     ],
 })
 export class AppComponent {
