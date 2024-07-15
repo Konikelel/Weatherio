@@ -1,7 +1,6 @@
 :host {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     padding: 2rem;
     border-radius: 1.5rem;
@@ -19,8 +18,6 @@
 .box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     padding: 1.5rem;
     border-radius: 1rem;
@@ -43,6 +40,13 @@
         }
     }
 
+    & > span {
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+
+        background-color: green;
+    }
+
     .data {
         display: flex;
         justify-content: space-between;
@@ -58,12 +62,13 @@
         .data-item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
 
             gap: 1rem;
 
             .description {
+                display: flex;
+                justify-content: center;
+
                 font-size: 0.9rem;
                 color: grey;
             }
