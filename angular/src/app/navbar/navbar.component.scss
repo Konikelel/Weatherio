@@ -1,9 +1,10 @@
 nav {
+    min-height: 10vh;
+    padding: 2rem 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 2rem 0;
 }
 
 .header {
@@ -11,6 +12,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    width: 10%;
     gap: 1rem;
 
     span {
