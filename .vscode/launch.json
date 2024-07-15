@@ -10,7 +10,7 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "Angular Debugger Chrome",
+            "name": "Angular Debugger",
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:4200/",
