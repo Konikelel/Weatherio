@@ -1,29 +1,33 @@
 :host {
-    width: min(90%, 2000px);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
 
-    background-color: #131215;
+    width: min(90%, 2000px);
+
+    background-color: var(--background-color);
 }
 
 .app-container {
-    min-height: 90vh;
     display: flex;
+    min-height: 90vh;
 
-    gap: 3rem;
-
-    .first,
-    .second {
+    .section-first,
+    .section-second {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
         gap: 1rem;
     }
 
-    .second {
+    .section-first {
+        width: 25%;
+    }
+
+    .section-second {
         flex-grow: 1;
     }
 }

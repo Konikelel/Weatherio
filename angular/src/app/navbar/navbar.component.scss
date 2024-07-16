@@ -1,46 +1,43 @@
 nav {
-    min-height: 10vh;
-    padding: 2rem 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    min-height: 10vh;
+    padding: 2rem 0;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    width: 10%;
     gap: 1rem;
 
     span {
         font-size: 40px;
-        color: #2e9cca;
+        color: var(--accent-color);
     }
 
     h1 {
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.25rem;
         font-weight: 400;
     }
 }
 
 .search {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
+    width: 40%;
+    gap: 0.75rem;
 
     cursor: text;
     padding: 0.75rem 1rem;
     border-radius: 4rem;
-    background-color: #1b1b1d;
-
-    gap: 0.75rem;
+    background-color: var(--container-color);
 
     input {
         all: unset;
-        width: 30rem;
         text-align: left;
     }
 }
@@ -61,13 +58,13 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    gap: 0.5rem;
+
     cursor: pointer;
     padding: 0.75rem 1rem;
     border-radius: 4rem;
-    background-color: #2e9cca90;
+    background-color: var(--accent-color-inactive);
     color: whitesmoke;
-
-    gap: 0.5rem;
 
     span {
         font-size: 1.25rem;
