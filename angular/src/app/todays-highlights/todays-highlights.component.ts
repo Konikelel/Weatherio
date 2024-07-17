@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './todays-highlights.component.html',
-    // styleUrl: './todays-highlights.component.scss',
+    styleUrl: './todays-highlights.component.scss',
 })
 export class TodaysHighlightsComponent {}
