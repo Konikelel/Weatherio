@@ -10,6 +10,9 @@
     --background-color: #131215;
     --container-color: #1b1b1d;
     --box-color: #1a191c;
+
+    --text-data-value: 2rem;
+    --text-data-desc: 1rem;
 }
 
 * {
@@ -30,11 +33,17 @@ body {
     color: var(--primary-color);
 }
 
-.main-text {
+.data-icon {
+    font-size: 4rem;
+}
+
+.container-title {
     font-size: 1.25rem;
     font-weight: 500;
 }
 
-.description {
+.box-title {
     font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-color);
 }

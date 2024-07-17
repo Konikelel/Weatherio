@@ -1,13 +1,13 @@
-<h3 class="main-text">5 Days Forecast</h3>
+<h3 class="container-title">5 Days Forecast</h3>
 <div class="weather">
     @for (item of [1, 2, 3, 4, 5]; track item) {
-    <div class="day description">
+    <div class="day desc">
         <div class="weather-status">
             <img src="assets/01d.png" alt="weather" />
             <p class="temperature">{{ 19 + item }}</p>
         </div>
-        <p class="date">{{ item }} Mar</p>
-        <p class="date">Thursday</p>
+        <p>{{ item }} Mar</p>
+        <p>Thursday</p>
     </div>
     }
 </div>

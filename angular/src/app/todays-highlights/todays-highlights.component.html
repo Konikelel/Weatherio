@@ -1,18 +1,41 @@
-<h3 class="main-text">Todays Highlights</h3>
+<h3 class="container-title">Todays Highlights</h3>
 <div class="overview">
     <div class="air-quality box">
-        <div class="description">
-            <h4>Air Quality Index</h4>
+        <div class="desc">
+            <h4 class="box-title">Air Quality Index</h4>
             <span>Good</span>
         </div>
         <div class="data">
-            <span class="material-icons-outlined" alt="air">air</span>
+            <span class="material-icons-outlined data-icon" alt="air">air</span>
             @for (item of [1, 2, 3, 4]; track item) {
             <div class="data-item">
-                <span class="description">PM2.5</span>
+                <span class="desc">PM2.5</span>
                 <span class="value">10</span>
             </div>
             }
+        </div>
+    </div>
+    <div class="sun-status box">
+        <h4 class="box-title">Sunrise & Sunset</h4>
+        <div class="data">
+            <div class="data-item">
+                <span class="material-icons-outlined data-icon" alt="sunrise"
+                    >wb_sunny</span
+                >
+                <div class="sun-data">
+                    <span class="desc">Sunrise</span>
+                    <span class="value">7:23 AM</span>
+                </div>
+            </div>
+            <div class="data-item">
+                <span class="material-icons-outlined data-icon" alt="sunset"
+                    >bedtime</span
+                >
+                <div class="sun-data">
+                    <span class="desc">Sunset</span>
+                    <span class="value">5:43 PM</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

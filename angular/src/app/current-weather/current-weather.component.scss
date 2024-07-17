@@ -11,6 +11,10 @@
     background-color: #1b1b1d;
 }
 
+.weather > p {
+    margin: 0.5rem 0;
+}
+
 .weather-info {
     display: flex;
     flex-direction: row;

@@ -15,6 +15,9 @@ h3 {
 .overview {
     display: grid;
 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "air-quality air-quality sun-status sun-status";
+
     gap: 1rem 1.5rem;
 }
 
@@ -22,25 +25,22 @@ h3 {
     display: flex;
     flex-direction: column;
 
+    gap: 3rem;
+
     padding: 1.5rem;
     border-radius: 1rem;
     background-color: var(--box-color);
-
-    gap: 1rem;
 }
 
 .air-quality {
-    .description {
+    grid-area: air-quality;
+
+    .desc {
         width: 100%;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        h4 {
-            font-weight: 400;
-            color: var(--secondary-color);
-        }
 
         span {
             padding: 0.25rem 0.75rem;
@@ -57,25 +57,56 @@ h3 {
         justify-content: space-between;
         align-items: center;
 
-        & > span {
-            font-size: 4rem;
-        }
-
         .data-item {
             display: flex;
             flex-direction: column;
 
-            .description {
+            .desc {
                 display: flex;
                 justify-content: center;
 
-                font-size: 0.9rem;
+                font-size: var(--text-data-desc);
                 color: var(--secondary-color);
             }
 
             .value {
-                font-size: 2.5rem;
+                font-size: var(--text-data-value);
             }
+        }
+    }
+}
+
+.sun-status {
+    grid-area: sun-status;
+
+    .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 2rem;
+    }
+
+    .data-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        flex-grow: 1;
+        gap: 3rem;
+    }
+
+    .sun-data {
+        display: flex;
+        flex-direction: column;
+
+        .desc {
+            font-size: var(--text-data-desc);
+            color: var(--secondary-color);
+        }
+
+        .value {
+            font-size: var(--text-data-value);
         }
     }
 }
