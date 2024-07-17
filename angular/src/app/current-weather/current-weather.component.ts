@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './current-weather.component.html',
-    // styleUrl: './current-weather.component.scss',
+    styleUrl: './current-weather.component.scss',
 })
 export class CurrentWeatherComponent {}
